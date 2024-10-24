@@ -2,7 +2,7 @@ from setuptools import setup, find_namespace_packages
 
 
 def main() -> None:
-    pkg = "bleanser_sean"
+    pkg = "bleanser_pura"
     setup(
         name=pkg,
         packages=find_namespace_packages("src"),

@@ -12,7 +12,7 @@ modname() {
 	if [[ "$1" == *.* ]]; then
 		echo "$1"
 	else
-		echo "bleanser_sean.modules.$1"
+		echo "bleanser_pura.modules.$1"
 	fi
 }
 

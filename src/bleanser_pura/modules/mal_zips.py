@@ -1,6 +1,6 @@
 """
 Remove unneeded zip backups from saved MAL data:
-https://github.com/seanbreckenridge/malexport/#recover_deleted
+https://github.com/purarue/malexport/#recover_deleted
 """
 
 from pathlib import Path

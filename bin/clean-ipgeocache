@@ -2,7 +2,7 @@
 
 from pathlib import Path
 
-from seanb.jsonfast import loads, dumps
+from pura.jsonfast import loads, dumps
 from ipgeocache import get_cache_dir
 
 

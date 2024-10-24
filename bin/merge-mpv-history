@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # merges mpv history files, see:
-# https://github.com/seanbreckenridge/mpv-history-daemon#merge
+# https://github.com/purarue/mpv-history-daemon#merge
 
 set -o pipefail
 set -ex
@@ -11,7 +11,7 @@ main() {
 	backup_dir="${HOME}/.cache/mpv_removed"
 	# backup anything that exists to cache
 	rsync -Pavh "${mpv_dir}"/ "$backup_dir"
-	# https://github.com/seanbreckenridge/seanb-utils/blob/main/shellscripts/epoch
+	# https://github.com/purarue/pura-utils/blob/main/shellscripts/epoch
 	write_to="${mpv_dir}/merged-$(epoch).json"
 	python3 -m mpv_history_daemon merge "${mpv_dir}" --move "${backup_dir}" --write-to "${write_to}" "$@"
 	gzip --best "${write_to}"  # compress the merged file

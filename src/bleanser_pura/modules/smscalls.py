@@ -1,7 +1,7 @@
 """
 Supply a glob with each (not both!) to use this, like:
-python3 -m bleanser_sean.modules.smscalls prune --glob 'calls-*'
-python3 -m bleanser_sean.modules.smscalls prune --glob 'sms-*'
+python3 -m bleanser_pura.modules.smscalls prune --glob 'calls-*'
+python3 -m bleanser_pura.modules.smscalls prune --glob 'sms-*'
 """
 
 from pathlib import Path

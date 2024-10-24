@@ -11,11 +11,11 @@ which can be gigs on their own, so if your tmpdir is /tmp it may fill
 up your /tmp device
 
 I would recommend configuring HPI tempdir in your core config like mine:
-https://github.com/seanbreckenridge/dotfiles/blob/2303661bf2e3c66ccdd67c7039f000b88b54fb68/.config/my/my/config/__init__.py#L123-L127
+https://github.com/purarue/dotfiles/blob/2303661bf2e3c66ccdd67c7039f000b88b54fb68/.config/my/my/config/__init__.py#L123-L127
 
 So you can optionally set a different tempdir, and then run this while setting a tmpdir in ~/.cache instead:
 mkdir -p ~/.cache/tdir
-HPI_TEMPDIR=~/.cache/tdir python3 -m bleanser_sean.modules.discord prune ~/data/discord/ --move ~/.cache/removed
+HPI_TEMPDIR=~/.cache/tdir python3 -m bleanser_pura.modules.discord prune ~/data/discord/ --move ~/.cache/removed
 """
 
 from pathlib import Path
