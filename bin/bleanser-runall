@@ -80,7 +80,7 @@ main() {
 		prune_module chess --glob ~/data/chess/'chessdotcom_2*' --prune-dominated --multiway || return $?
 		prune_module chess --glob ~/data/chess/'lichess_2*' --prune-dominated --multiway || return $?
 		prune_module trakt --glob ~/data/trakt/'2*' --prune-dominated --multiway || return $?
-		prune_module activitywatch --glob ~/data/aw-window/phone/'*.json' --prune-dominated --multiway || return $?
+		prune_module activitywatch --glob ~/data/aw-window/phone/'*.json*' --prune-dominated --multiway || return $?
 		prune_module listenbrainz --glob ~/data/listenbrainz/'2*' --prune-dominated --multiway || return $?
 		# running mal_zips by size doesn't work well, as it removes newer, smaller exports (since history size has shrunk)
 		if [[ "$sort_type" == 'name' ]]; then
