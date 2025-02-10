@@ -11,7 +11,10 @@ epoch() {
 main() {
 	local tmpdir tmpfile browsing_dir
 	tmpdir="$(mktemp -d)"
-	browsing_dir="$(backup_to browsing)"
+	browsing_dir="$(backup_to browsing)" || exit $?
+	if [[ ! -d "$browsing_dir" ]]; then
+		exit 1
+	fi
 	# backup anything that exists to cache
 	mkdir -p ~/.cache/removed/browsing
 	rsync -Pavh "${browsing_dir}"/ ~/.cache/removed/browsing
