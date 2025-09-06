@@ -3,7 +3,7 @@
 set -e
 set -o pipefail
 
-declare removed_dir total_size
+declare removed_dir total_size allowed_size
 removed_dir="${HOME}/.cache/removed"
 total_size="$(dir-size "${removed_dir}")"
 
