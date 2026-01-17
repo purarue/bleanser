@@ -4,7 +4,8 @@ https://github.com/purarue/malexport/#recover_deleted
 """
 
 from pathlib import Path
-from typing import Iterator, Any
+from typing import Any
+from collections.abc import Iterator
 from contextlib import contextmanager
 
 from my.core.structure import match_structure

@@ -5,7 +5,8 @@ python3 -m bleanser_pura.modules.smscalls prune --glob 'sms-*'
 """
 
 from pathlib import Path
-from typing import Iterator, Any
+from typing import Any
+from collections.abc import Iterator
 
 from my.smscalls import _extract_calls, _extract_messages
 

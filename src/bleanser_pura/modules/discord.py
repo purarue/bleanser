@@ -19,7 +19,8 @@ HPI_TEMPDIR=~/.cache/tdir python3 -m bleanser_pura.modules.discord prune ~/data/
 """
 
 from pathlib import Path
-from typing import Iterator, Any
+from typing import Any
+from collections.abc import Iterator
 from contextlib import contextmanager
 
 from my.core.structure import match_structure

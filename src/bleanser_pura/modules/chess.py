@@ -1,6 +1,7 @@
 import orjson
 from pathlib import Path
-from typing import Iterator, Any
+from typing import Any
+from collections.abc import Iterator
 
 from bleanser.core.modules.extract import ExtractObjectsNormaliser
 

@@ -1,5 +1,6 @@
 from pathlib import Path
-from typing import Iterator, Any
+from typing import Any
+from collections.abc import Iterator
 
 from active_window.parse import parse_window_events
 

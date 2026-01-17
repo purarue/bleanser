@@ -1,4 +1,5 @@
-from typing import Any, Iterator
+from typing import Any
+from collections.abc import Iterator
 from pathlib import Path
 
 from my.ipython import _parse_database
